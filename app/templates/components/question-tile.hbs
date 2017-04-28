@@ -1,11 +1,4 @@
-<form class="questionForm">
-  <label for="user">Your Name: </label>
-  <div class="form-group">
-    {{input value=user id="user" required="required" class="form-control"}}
-  </div>
-  <div class="form-group">
-    <label for="userQuestion">What's your question?</label>
-    {{input value=userQuestion id="userQuestion" class="form-control"}}
-  </div>
-  <button class="btn btn-success" {{action 'saveQuestion'}}>Ask</button>
-</form>
+<div class="questionTile">
+  <p>{{question.user}} {{question.userQuestion}}</p>
+  {{question-functionality saveQuestion="saveQuestion"}}
+</div>
