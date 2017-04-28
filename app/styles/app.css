@@ -1,0 +1,14 @@
+.jumbotron {
+  margin-bottom: 0px;
+  background-image: url("http://www.pcmuseum.ca/gallery/0109-CompView-750.jpg.JPG");
+  background-size: cover;
+}
+.jumbotron h1 {
+  text-shadow: 1px 1px 0 white,
+  -1px -1px 0 white,
+  1px -1px 0 white,
+  -1px 1px 0 white;
+  text-align: center;
+  font-family: monospace;
+  /*background-color: white;*/
+}
