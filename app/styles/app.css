@@ -12,3 +12,8 @@
   font-family: monospace;
   /*background-color: white;*/
 }
+
+.questionNew {
+  width: 400px;
+  height: auto;
+}

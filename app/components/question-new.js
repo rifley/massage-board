@@ -1,12 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  updateFormShowing: false,
+  questionFormShowing: false,
   actions: {
-    updateFormShow(){
-      this.set('updateFormShowing', true);
+    questionFormShow(){
+      this.set('questionFormShowing', true);
     },
-    updateQuestion() {
+    saveQuestion() {
       var params = {
         user: this.get('user'),
         userQuestion: this.get('userQuestion'),

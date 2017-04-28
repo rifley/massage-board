@@ -1,4 +1,8 @@
-<div class="questionTile">
-  <p>{{question.user}} {{question.userQuestion}}</p>
-  {{question-functionality saveQuestion="saveQuestion"}}
-</div>
+{{#link-to 'question' question.id}}<div class="questionTile col-md-4">
+  <div class="panel panel-default">
+    <div class="panel-heading">{{question.user}}</div>
+    <div class="panel-body">
+      {{question.userQuestion}}
+    </div>
+  </div>
+</div>{{/link-to}}
