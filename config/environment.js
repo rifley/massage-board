@@ -16,6 +16,12 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    firebase: {
+      apiKey: "AIzaSyDieaakbdaLdevpFBe0W_FBBNQvxKcJZEk",
+      authDomain: "massage-board.firebaseapp.com",
+      databaseURL: "https://massage-board.firebaseio.com",
+      storageBucket: "massage-board.appspot.com",
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance
