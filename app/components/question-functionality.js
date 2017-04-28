@@ -6,14 +6,14 @@ export default Ember.Component.extend({
     updateFormShow(){
       this.set('updateFormShowing', true);
     },
-    update(question) {
+    updateQuestion(question) {
       var params = {
         user: this.get('user'),
         userQuestion: this.get('userQuestion'),
         additionalNote: this.get('additonalNote'),
       };
       this.set('updateFormShowing', false);
-      this.sendAction('saveQuestion', params);
+      this.sendAction('updateQuestion', question, params);
     },
     deleteQuestion(question) {
       this.sendAction('deleteQuestion', question);
