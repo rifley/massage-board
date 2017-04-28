@@ -1,8 +1,8 @@
 {{#link-to 'question' question.id}}<div class="questionTile col-md-4">
   <div class="panel panel-default">
-    <div class="panel-heading">{{question.user}}</div>
+    <div class="panel-heading">{{question.user}} asks: "{{question.userQuestion}}"</div>
     <div class="panel-body">
-      {{question.userQuestion}}
+      additional notes- {{question.additionalNote}}
     </div>
   </div>
 </div>{{/link-to}}

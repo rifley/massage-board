@@ -1,2 +1,14 @@
-<h1>{{model.user}} asks: </h1>
-<h3>{{model.userQuestion}}</h3>
+<h3>{{model.user}} asks: "{{model.userQuestion}}?"</h3>
+<h4>Note: {{model.additionalNote}}</h4>
+
+{{#each model.answers as |answer|}}
+  <div class="panel panel-default">
+  <div class="panel-heading">{{answer.user}}</div>
+  <div class="panel-body">
+    {{answer.userAnswer}}
+  </div>
+  </div>
+{{/each}}
+{{question-functionality question=model deleteQuestion="deleteQuestion" updateQuestion="updateQuestion"}}
+<br>
+{{answer-new saveAnswer="saveAnswer" question=model}}

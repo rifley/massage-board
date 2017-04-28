@@ -1,0 +1,17 @@
+<div class="answers">
+  {{#if answerFormShowing}}
+    <form class="answerForm">
+      <label for="user">Your Name: </label>
+      <div class="form-group">
+        {{input value=user id="user" required="required" class="form-control"}}
+      </div>
+      <div class="form-group">
+        <label for="userAnswer">What do you know about that?</label>
+        {{input value=userAnswer id="userAnswer" class="form-control"}}
+      </div>
+      <button class="btn btn-success" {{action 'saveAnswer'}}>Answer</button>
+    </form>
+  {{else}}
+    <button class="btn btn-info" {{action 'answerFormShow'}}>Provide an answer</button>
+  {{/if}}
+</div>

@@ -1,1 +1,22 @@
-<!-- update & delete go here -->
+<div class="question">
+  {{#if updateFormShowing}}
+    <form class="questionForm">
+      <label for="user">Your Name: </label>
+      <div class="form-group">
+        {{input value=user id="user" required="required" class="form-control"}}
+      </div>
+      <div class="form-group">
+        <label for="userQuestion">What's your question?</label>
+        {{input value=userQuestion id="userQuestion" class="form-control"}}
+      </div>
+      <div class="form-group">
+        <label for="additionalNote">Additional Notes: </label>
+        {{input value=additionalNote id="additionalNote" class="form-control"}}
+      </div>
+      <button class="btn btn-success" {{action 'saveQuestion'}}>Submit</button>
+    </form>
+  {{else}}
+    <button class="btn btn-info" {{action 'updateFormShow'}}>Edit your question</button>
+  {{/if}}
+<button {{action 'deleteQuestion' question}} class="btn btn-danger">Delete Question</button>
+</div>
