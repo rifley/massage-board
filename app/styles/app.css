@@ -17,3 +17,27 @@
   width: 400px;
   height: auto;
 }
+
+.panelStyle {
+  width: 400px;
+}
+
+#questionAsked {
+  border-bottom: solid 2px black;
+  margin-bottom: 20px;
+}
+
+#questionAsked h4 {
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+#homeHeader {
+  border-bottom: solid 2px black;
+  margin-bottom: 20px;
+}
+
+.question button {
+  width: 100px;
+  margin-left: 15px;
+}

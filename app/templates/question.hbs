@@ -1,14 +1,19 @@
-<h3>{{model.user}} asks: "{{model.userQuestion}}?"</h3>
-<h4>Note: {{model.additionalNote}}</h4>
+<div id="questionAsked">
+  <h3>{{model.user}} asks: "<em>{{model.userQuestion}}?</em>"</h3>
+  <div class="row">
+    <h4 class="col-md-8">Additional Notes: {{model.additionalNote}}</h4>
+    <span class="questionFunc col-md-4">{{question-functionality question=model deleteQuestion="deleteQuestion" updateQuestion="updateQuestion"}}</span>
+  </div>
+</div>
 
 {{#each model.answers as |answer|}}
-  <div class="panel panel-default">
+  <div class="panel panel-default panelStyle">
   <div class="panel-heading">{{answer.user}}</div>
   <div class="panel-body">
     {{answer.userAnswer}}
   </div>
   </div>
 {{/each}}
-{{question-functionality question=model deleteQuestion="deleteQuestion" updateQuestion="updateQuestion"}}
+
 <br>
 {{answer-new saveAnswer="saveAnswer" question=model}}

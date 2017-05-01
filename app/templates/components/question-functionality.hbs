@@ -13,12 +13,15 @@
         <label for="additionalNote">Additional Notes: </label>
         {{input value=additionalNote id="additionalNote" class="form-control" placeholder=question.additionalNote}}
       </div>
-      <button class="btn btn-success" {{action 'updateQuestion' question}}>Submit</button>
+      <div class="row">
+        <button class="btn btn-success col-md-6" {{action 'updateQuestion' question}}>Submit</button>
+        <button class="btn btn-info col-md-6" {{action 'updateFormHide'}}>Hide</button>
+      </div>
     </form>
   {{else}}
-    <button class="btn btn-info" {{action 'updateFormShow'}}>Edit your question</button>
+    <button class="btn btn-info" {{action 'updateFormShow'}}>Edit</button>
   {{/if}}
 
 
-<button {{action 'deleteQuestion' question}} class="btn btn-danger">Delete Question</button>
+<button {{action 'deleteQuestion' question}} class="btn btn-danger delBut">Delete</button>
 </div>

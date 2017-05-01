@@ -6,6 +6,9 @@ export default Ember.Component.extend({
     updateFormShow(){
       this.set('updateFormShowing', true);
     },
+    updateFormHide(){
+      this.set('updateFormShowing', false);
+    },
     updateQuestion(question) {
       var params = {
         user: this.get('user'),

@@ -29,7 +29,7 @@ You will need the following things properly installed on your computer.
 * `bower install`
 
 ## Building/ Usage
-When ready to start up, be sure you are located in the "massage-board" directory and run `$ ember build`, followed by `$ ember serve`. You can now visit "localhost:4200" in your web browser and use the "Message the foo" web-app.
+When ready to start up, be sure you are located in the "massage-board" directory and run `$ ember build`, followed by `$ ember serve`. You can now visit [localhost:4200](http://localhost:4200) in your web browser and use the "Message the foo" web-app.
 
 
 ## Planning
